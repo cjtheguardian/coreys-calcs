@@ -1,0 +1,17 @@
+<html>
+
+<body>
+
+<form action="/simplemath/add/" method="post">
+    {% csrf_token %}
+
+    <input type="text" name="firstInt" />
+    +
+    <input type="text" name="secondInt" />
+    =
+    {{result}}
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
